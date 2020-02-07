@@ -1,0 +1,36 @@
+<roundcube:object name="doctype" value="html5" />
+<html>
+<head>
+<title><roundcube:object name="pagetitle" /></title>
+<roundcube:include file="/includes/links.html" />
+
+<meta name="application-name" content="KeeWeb">
+<meta name="kw-signature" content="">
+<meta name="kw-config" content="(no-config)">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="KeeWeb">
+<meta name="theme-color" content="#6386ec">
+<meta name="msapplication-TileColor" content="#6386ec">
+
+<script>
+if (!localStorage.getItem('appSettings')) {
+  localStorage.setItem('appSettings', '{"theme":"fb"}');
+} else {
+  var o = JSON.parse(localStorage.getItem('appSettings'));
+  o.theme = 'fb';
+  localStorage.setItem('appSettings', JSON.stringify(o));
+}
+</script>
+
+</head>
+<roundcube:if condition="env:extwin" /><body class="extwin ht-d"><roundcube:else /><body class="th-d"><roundcube:endif />
+<roundcube:include file="/includes/taskbar.html" />
+<roundcube:include file="/includes/header.html" />
+
+<noscript><h1>KeeWeb</h1><p>KeeWeb is a password manager written in JavaScript. Please enable JavaScript to run it.</p></noscript>
+
+<roundcube:include file="/includes/footer.html" />
+</body>
+</html>

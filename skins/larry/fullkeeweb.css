@@ -1,0 +1,9 @@
+#taskbar a.button-keeweb.button-selected .button-inner {
+  background: url(./lock.png) 3px bottom no-repeat;
+}
+
+#taskbar a.button-keeweb .button-inner {
+  background: url(./lock.png) 3px top no-repeat;
+}
+
+

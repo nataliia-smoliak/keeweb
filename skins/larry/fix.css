@@ -1,0 +1,8 @@
+body .app {
+  height: calc(100% - 97px);
+}
+
+body.minimal .app {
+  height: calc(100% - 70px);
+}
+
