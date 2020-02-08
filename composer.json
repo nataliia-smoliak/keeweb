@@ -1,5 +1,6 @@
 {
   "name": "nataliia-smoliak/keeweb",
+  "description": "KeeWeb/KeePass integration as Roundcube plugins.",
   "type": "roundcube-plugin",
   "license": "GPL-3.0+",
   "repositories": [
